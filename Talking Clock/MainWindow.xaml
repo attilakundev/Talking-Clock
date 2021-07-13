@@ -1,0 +1,26 @@
+﻿<Window x:Class="Talking_Clock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Talking_Clock"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="196*"/>
+            <ColumnDefinition Width="139*"/>
+            <ColumnDefinition Width="201*"/>
+            <ColumnDefinition Width="134*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="pontosido" Content="Mi a pontos idő?" HorizontalAlignment="Center" Margin="0,116,0,0" VerticalAlignment="Top" Height="20" Width="92" Click="pontosido_Click"/>
+        <Button Content="Hanyadika van ma?" HorizontalAlignment="Center" Margin="0,116,0,0" VerticalAlignment="Top" Grid.Column="1" Height="20" Width="106" Click="hanyadika_Click"/>
+        <Button Content="What's the date today?" HorizontalAlignment="Center" Margin="0,116,0,0" VerticalAlignment="Top" Grid.Column="3" Height="20" Width="126" Click="datetoday_Click"/>
+        <Button Content="What time is it?" HorizontalAlignment="Center" Margin="0,116,0,0" VerticalAlignment="Top" Grid.Column="4" Height="20" Width="86" Click="timeis_click"/>
+        <Label Content="Magyaroknak" HorizontalAlignment="Left" Margin="95,0,0,0" VerticalAlignment="Center" Height="26" Width="82" Grid.ColumnSpan="2"/>
+        <Label Content="For English speaking people" HorizontalAlignment="Left" Margin="42,0,0,0" VerticalAlignment="Center" Grid.Column="3" Height="26" Width="160" Grid.ColumnSpan="2"/>
+        <Label x:Name="time" Content="Time" HorizontalAlignment="Left" Margin="156,23,0,0" VerticalAlignment="Top" Grid.Column="1" Height="26" Width="251" Grid.ColumnSpan="3"/>
+
+    </Grid>
+</Window>
